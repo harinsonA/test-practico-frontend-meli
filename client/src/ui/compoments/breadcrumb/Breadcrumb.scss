@@ -1,0 +1,20 @@
+@import '../../styles/globals.scss';
+
+.breadcrumb {
+  height: 16px;
+  margin: 16px 0;
+  font-size: 1.5em;
+  color: $text-main-color;
+}
+
+.text {
+  &::after {
+    content: ' > ';
+  }
+}
+
+.text {
+  &:last-child::after {
+    content: '';
+  }
+}

@@ -1,0 +1,94 @@
+@import '../../styles/globals.scss';
+
+
+.item {
+  width: 100%;
+  background-color: $container-background;
+  border-radius: $common-border-radius;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-bottom: 50px;
+}
+
+.item__detail {
+  width: 60%;
+  min-width: 680px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.detail__image {
+  height: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.description__title {
+  font-size: 3em;
+  font-weight: 400;
+
+  margin-bottom: 32px;
+}
+
+.description__text {
+  font-size: 1.7em;
+  color: $text-main-color;
+  line-height: 1.4;
+}
+
+.item__info {
+  width: 30%;
+  min-width: 280px;
+}
+
+.info__sales {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
+
+.info__name {
+  font-size: 2.5em;
+  padding-bottom: 32px;
+  font-weight: 600;
+}
+
+.info__price {
+  font-size: 4.8em;
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.price__decimal {
+  font-size: .5em;
+  margin-top: 7px;
+  margin-bottom: auto;
+}
+
+.info__buy-button {
+  width: 100%;
+  height: 40px;
+  background-color: $button-main-background;
+
+  font-size: 1.9em;
+  font-weight: 500;
+  color: $button-main-color;
+
+  border: none;
+  border-radius: $common-border-radius;
+  cursor: pointer;
+  &:hover {
+    background-color: $button-main-hover-background;
+  }
+}
+
+

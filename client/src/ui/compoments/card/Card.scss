@@ -1,0 +1,58 @@
+@import '../../styles/globals.scss';
+
+.card {
+  width: 100%;
+  background-color: $container-background;
+  border-radius: $common-border-radius;
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  padding: 16px 0;
+}
+
+.card__image {
+  height: 180px;
+  border-radius: $common-border-radius;
+}
+
+.card__body {
+  width: 100%;
+  padding: 20px 0;
+  padding-right: 50px;
+
+  line-height: 24px;
+}
+
+.description__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  padding-bottom: 32px;
+  gap: 5px;
+}
+
+.main__title {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: $text-default-color;
+}
+
+.title__image {
+  width: 18px;
+  margin-left: 10px;
+}
+
+.main__location {
+  font-size: 1.3em;
+  color: $text-second-color;
+}
+
+.description__text {
+  font-size: 1.9em;
+  color: $text-main-color;
+}
